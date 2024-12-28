@@ -1,0 +1,14 @@
+[package]
+name = "topic_plotter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.30.0"
+egui = "0.30.0"
+futures = "0.3.31"
+r2r = "0.9.4"
+env_logger = { version = "0.10", default-features = false, features = [
+    "auto-color",
+    "humantime",
+] }
