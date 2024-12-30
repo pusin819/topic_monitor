@@ -104,6 +104,14 @@ impl MyApp {
 
 impl eframe::App for MyApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        egui::TopBottomPanel::bottom("Status Bar").show(ctx, |ui| {
+            use egui::special_emojis::GITHUB;
+            ui.hyperlink_to(
+                format!("{GITHUB} source on GitHub"),
+                "https://github.com/pusin819/topic_monitor",
+            );
+        });
+
         egui::SidePanel::left("Topic List").show(ctx, |ui| {
             ui.heading("Topic List");
 

@@ -1,5 +1,6 @@
 [package]
-name = "topic_plotter"
+authors = ["pusin"]
+name = "topic_monitor"
 version = "0.1.0"
 edition = "2021"
 
